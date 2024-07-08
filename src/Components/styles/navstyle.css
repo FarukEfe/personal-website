@@ -7,7 +7,6 @@
 /* nav-bar */
 #navbar {
     /* Box positioning */
-    box-sizing: border-box;
 
     position: fixed;
     width: 100%;
@@ -34,8 +33,6 @@
     align-items: center;
     padding: 0px;
     gap: 25px;
-
-    width: 703px;
     height: 70px;
 
 
@@ -79,18 +76,20 @@
 }
 
 /* socials navigation */
+/*
 .socials {
-    /*In case you need to add shared features for all socials logos*/
+    In case you need to add shared features for all socials logos
 }
-/* twitch logo */
+
 #twitch-logo {
-    /* Width & Height */
+
 }
-/* kick logo */
+
 #kick-logo {
-    /* Width & Height */
+
 }
-/* youtube logo */
+
 #yt-logo {
-    /* Width & Height */
+
 }
+*/

@@ -1,4 +1,7 @@
+import React from "react";
 import Logo from "./Logo";
+/* style */
+import './styles/navstyle.css';
 
 class Navbar extends React.Component {
     render() {
@@ -6,16 +9,17 @@ class Navbar extends React.Component {
             <nav id="navbar">
                 <div>
                     <a><Logo image="yuniks-logo.png" /></a>
-                    <a class="nav-item"><text>Streams</text></a>
-                    <a class="nav-item"><text>Credits</text></a>
-                    <a class="nav-item"><text>Join Us</text></a>
-                    <a class="nav-item"><text>Community</text></a>
+                    <a href="/streams" className="nav-item">Streams</a>
+                    <a href="/joinus" className="nav-item">Join Us</a>
+                    <a href="/community" className="nav-item">Community</a>
                 </div>
                 <div>
-                    <a><Logo class="socials" id="twitch-logo" image="twitch.png" /></a>
-                    <a><Logo class="socials" id="yt-logo" image="youtube.png" /></a>
+                    <a href="/"><Logo className="socials" id="twitch-logo" image="twitch.png" /></a>
+                    <a href="/"><Logo className="socials" id="yt-logo" image="youtube.png" /></a>
                 </div>
             </nav>
         )
-    }
+    };
 }
+
+export default Navbar;

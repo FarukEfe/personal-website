@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Route, Switch, Redirect  } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import React from 'react';
 /* Media and styles */
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 /* Pages and components */
 import Navbar from "./Components/Nav";
@@ -32,6 +32,7 @@ function App() {
           <Route exact={true} path="/" component={null/*Main Page*/} />
           <Route exact={true} path="/streams" component={null/*Streams*/} />
           <Route exact={true} path="/community" component={null/*Community*/} />
+          <Route exact={true} path="/joinus" component={null/*Some Page IDK*/} />
           <Route exact={true} path="/pagenotfound" component={null/*Error Page*/} />
           <Redirect to="/404" />
         </Switch>
