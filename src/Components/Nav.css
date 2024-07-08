@@ -69,7 +69,7 @@
     padding: 0px;
     gap: 15px;
 
-    width: 421px;
+    width: 400px;
     height: 40px;
 
     /* Inside auto layout */
@@ -78,150 +78,19 @@
     flex-grow: 0;
 }
 
-
-
-/* ins-nav-logo */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
-
-width: 155px;
-height: 40px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
-/* ig-logo */
-
-width: 40px;
-height: 40px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
-/* Vector */
-
-position: absolute;
-left: 0%;
-right: 74.19%;
-top: 0%;
-bottom: 0%;
-
-background: linear-gradient(135.92deg, #8A3AB9 10.94%, #BC2A8D 88.46%);
-
-
-/* Vector */
-
-position: absolute;
-left: 6.45%;
-right: 78.49%;
-top: 16.67%;
-bottom: 25%;
-
-background: linear-gradient(135.92deg, #8A3AB9 10.94%, #BC2A8D 88.46%);
-
-
-/* YunX_12 */
-
-width: 107px;
-height: 19px;
-
-font-family: 'Stick No Bills';
-font-style: normal;
-font-weight: 600;
-font-size: 30px;
-line-height: 38px;
-display: flex;
-align-items: center;
-
-background: linear-gradient(89.95deg, #8A3AB9 0.04%, #BC2A8D 52.8%, #FFFFFF 105.57%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-/* yt-nav-logo */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
-
-width: 251px;
-height: 30px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-/* youtube-logo */
-
-width: 40px;
-height: 30px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
-/* Vector */
-
-position: absolute;
-left: 0%;
-right: 84.06%;
-top: 0%;
-bottom: 0%;
-
-background: #FF0000;
-
-
-/* YuniksNaberDiyo */
-
-width: 203px;
-height: 19px;
-
-font-family: 'Stick No Bills';
-font-style: normal;
-font-weight: 600;
-font-size: 30px;
-line-height: 38px;
-display: flex;
-align-items: center;
-
-background: linear-gradient(89.99deg, #FF0000 0.01%, #FFFFFF 105.41%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
+/* socials navigation */
+.socials {
+    /*In case you need to add shared features for all socials logos*/
+}
+/* twitch logo */
+#twitch-logo {
+    /* Width & Height */
+}
+/* kick logo */
+#kick-logo {
+    /* Width & Height */
+}
+/* youtube logo */
+#yt-logo {
+    /* Width & Height */
+}
