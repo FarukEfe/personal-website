@@ -2,7 +2,9 @@ import React from "react";
 
 class Logo extends React.Component {
     render() {
-        return <img src={window.location.origin + "/" + this.props.image}/>
+        const dir = process.env.PUBLIC_URL + "/images/" + this.props.image
+        console.log(dir)
+        return <img style={this.props.style} src={dir} />
     };
 }
 
