@@ -4,8 +4,8 @@ import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
 /* Pages and components */
-import Navbar from "./Components/Nav";
-import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar/index";
+import Footer from "./Components/Footer/index";
 
 import MainPage from './Pages/MainPage';
 /* Template header
@@ -32,16 +32,17 @@ function App() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap" rel="stylesheet"  />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       </head>
       <div className="App">
         <Router>
           <Navbar />
           <Switch>
-            <Route exact={true} path="/" component={MainPage} />
+            <Route exact={true} path="/" component={null /*MainPage*/} />
             <Route exact={true} path="/streams" component={null /*Streams*/} />
             <Route exact={true} path="/community" component={null /*Community*/} />
             <Route exact={true} path="/joinus" component={null /*Some Page IDK*/} />
-            <Route exact={true} path="/pagenotfound" component={null /*Error Page*/} />
+            <Route exact={true} path="/404" component={null /*Error Page*/} />
             <Redirect to="/404" />
           </Switch>
           <Footer />

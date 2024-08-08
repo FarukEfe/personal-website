@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    vertical-align: center !important;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*Change this to flex-start flex-end etc to align differently in navbar*/
+    vertical-align: center;
+    padding: 10px 30px;
+    
+    position: fixed;
+    width: 100%;
+    height: max-content;
+    left: 0px;
+    top: 0px;
+    z-index: 99;
+}
+
+#navigation li, a, button {
+    font-size: 20px;
+    color: #edf0f1;
+    vertical-align: center;
+}
+
+#main {
+    margin-right: 15px;
+}
+
+.logo {
+    cursor: pointer;
+    border-style: 2px solid;
+}
+
+#logos li {
+    padding: 0px 6px !important;
+    vertical-align: center !important;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav_links li a {
+    transition: all 0.15s ease 0s;
+    text-decoration: none !important;
+}
+
+.nav_links li a:hover {
+    color: rgba(10, 165, 204,1);
+}
+
+#navigation button {
+    padding: 6px 18px;
+    background-color: rgba(10, 165, 204,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.15s ease 0s;
+}
+
+#navigation button:hover {
+    background-color: rgba(10, 165, 204,0.8);
+}
+
+.stick-semibold {
+    font-family: 'Stick No Bills', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.stick-bold {
+    font-family: 'Stick No Bills', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+}
