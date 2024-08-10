@@ -7,7 +7,8 @@ import './App.css';
 import Navbar from "./Components/Navbar/index";
 import Footer from "./Components/Footer/index";
 
-import MainPage from './Pages/MainPage';
+import MainPage from './Pages/Main/index';
+import EducationPage from './Pages/Education/index';
 /* Template header
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -38,10 +39,10 @@ function App() {
         <Router>
           <Navbar />
           <Switch>
-            <Route exact={true} path="/" component={null /*MainPage*/} />
-            <Route exact={true} path="/streams" component={null /*Streams*/} />
-            <Route exact={true} path="/community" component={null /*Community*/} />
-            <Route exact={true} path="/joinus" component={null /*Some Page IDK*/} />
+            <Route exact={true} path="/" component={MainPage} />
+            <Route exact={true} path="/aboutme" component={null /* About Me*/} />
+            <Route exact={true} path="/education" component={EducationPage} />
+            <Route exact={true} path="/interests" component={null /*Interests*/} />
             <Route exact={true} path="/404" component={null /*Error Page*/} />
             <Redirect to="/404" />
           </Switch>

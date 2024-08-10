@@ -8,9 +8,10 @@ class BgResizeable extends React.Component {
         img.src = process.env.PUBLIC_URL + "/images/bg/" + this.props.image;
         const ratio = img.height / img.height;
         
+        this.props = props;
         this.state = {
             ratio: ratio
-        }
+        };
     }
     
     get_ratio() {

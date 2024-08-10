@@ -16,9 +16,9 @@ class Navbar extends React.Component {
                 </nav>
                 <nav>
                     <ul className="nav_links">
-                        <li className="stick-semibold"><a href="/joinus">Join Us</a></li>
-                        <li className="stick-semibold"><a href="/community">Community</a></li>
-                        <li className="stick-semibold"><a href="/streams"><button>Streams</button></a></li>
+                        <li className="stick-semibold"><a href="/aboutme">About Me</a></li>
+                        <li className="stick-semibold"><a href="/education">Education</a></li>
+                        <li className="stick-semibold"><a href="/interests"><button>Interests</button></a></li>
                     </ul>
                 </nav>
             </div>

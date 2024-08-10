@@ -14,18 +14,17 @@
     margin: 10px;
     border-radius: 50%;
 
-    width: 52px  !important;
-    height: 52px !important;
+    width: 52px;
+    height: 52px;
     display: flex;
     align-items: center;
-    vertical-align: center !important;
+    vertical-align: center;
 }
 
 .socialIcons a i {
-    font-size: 2em;
+    font-size: 1.8em;
     color: black;
     opacity: 0.9;
-    outline: 2 solid black; /*For debugging, feel free to remove when you're done*/
 }
 
 .socialIcons a:hover {

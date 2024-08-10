@@ -12,7 +12,7 @@
     top: 0px;
     z-index: 99;
     background-color: #24252A;
-    vertical-align: center !important;
+    vertical-align: center;
 }
 
 #navigation nav {
@@ -42,8 +42,8 @@
 }
 
 #logos li {
-    padding: 0px 6px !important;
-    vertical-align: center !important;
+    padding: 0px 6px;
+    vertical-align: center;
 }
 
 .nav_links {

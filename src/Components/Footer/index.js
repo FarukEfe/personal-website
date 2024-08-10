@@ -14,9 +14,9 @@ class Footer extends React.Component {
         return (
             <div id="footer">
                 <div className="socialIcons">
-                    <a href=""><i className="fa-brands fa-instagram"></i></a>
-                    <a href=""><i className="fa-brands fa-twitch"></i></a>
-                    <a href=""><i className="fa-brands fa-youtube"></i></a>
+                    <a href=""><i className="fa-brands fa-linkedin" /></a>
+                    <a href=""><i className="fa-brands fa-instagram" /></a>
+                    <a href=""><i className="fa-brands fa-twitter" /></a>
                 </div>
                 <div className="footerNav">
                     <ul>
