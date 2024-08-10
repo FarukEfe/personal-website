@@ -13,8 +13,13 @@ class Card extends React.Component {
                         <img className="card-logo" alt="card" src={this.props.logo} />
                     </div>
                     <div className="back">
-                        <h1>Back of Card</h1>
-                        <p>Add your info here</p>
+                        <div className="card-info">
+                            <h1 className="stick-bold">{this.props.info.title + "(" + this.props.info.period + ")"}</h1>
+                            <ul className="stick-medium">
+                                <li>{this.props.info.level}</li>
+                                <li>{this.props.info.off_curriculum}</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

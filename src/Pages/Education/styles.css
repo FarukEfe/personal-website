@@ -2,22 +2,32 @@
     width: 100vw;
     height: fit-content;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #222222;
     padding-top: 120px;
+
+    padding-top: 100px;
+}
+
+#education > h1 {
+    height: fit-content;
+    text-align: left;
+    padding-left: 50px;
+    color: rgba(245,245,245,1);
 }
 
 #education > .h-flex {
     width: 100%;
     height: fit-content;
-    margin: 40px 150px;
+    padding-top: 40px 150px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    gap: 3%;
+    justify-content: center;
+    gap: 5%;
 }
 
 @media only screen and (max-width: 1000px) {
