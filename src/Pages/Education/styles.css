@@ -1,8 +1,27 @@
-#streams {
+#education {
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #222;
+    background-color: #222222;
+    padding-top: 120px;
+}
+
+#education > .h-flex {
+    width: 100%;
+    height: fit-content;
+    margin: 40px 150px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3%;
+}
+
+@media only screen and (max-width: 1000px) {
+    #education > .h-flex {
+        flex-direction: column;
+    }
 }
