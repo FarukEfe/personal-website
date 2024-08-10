@@ -1,16 +1,5 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 #footer {
     background-color: #24252A;
-}
-
-.footerContainer {
-    width: 100%;
-    padding: 70px 30px 20px;
 }
 
 .socialIcons {
@@ -20,16 +9,23 @@
 
 .socialIcons a {
     text-decoration: none;
-    padding: 10px;
+    padding: 8px;
     background-color: white;
     margin: 10px;
     border-radius: 50%;
+
+    width: 52px  !important;
+    height: 52px !important;
+    display: flex;
+    align-items: center;
+    vertical-align: center !important;
 }
 
 .socialIcons a i {
     font-size: 2em;
     color: black;
     opacity: 0.9;
+    outline: 2 solid black; /*For debugging, feel free to remove when you're done*/
 }
 
 .socialIcons a:hover {
@@ -56,7 +52,7 @@
     color: white;
     margin: 20px;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.6em;
     opacity: 0.7;
     transition: 0.5s;
 }
@@ -66,8 +62,8 @@
 }
 
 .footerBottom {
-    background-color: #000;
-    padding: 20px;
+    background-color: #0A0A0A;
+    padding: 7px;
     text-align: center;
 }
 

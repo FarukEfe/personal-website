@@ -14,17 +14,16 @@ class Footer extends React.Component {
         return (
             <div id="footer">
                 <div className="socialIcons">
-                    <a href=""><i className="fa-brands fa-facebook"></i></a>
-                    <a href=""><i className="fa-brands fa-insta"></i></a>
+                    <a href=""><i className="fa-brands fa-instagram"></i></a>
                     <a href=""><i className="fa-brands fa-twitch"></i></a>
                     <a href=""><i className="fa-brands fa-youtube"></i></a>
                 </div>
                 <div className="footerNav">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Join Us</a></li>
-                        <li><a href="">Community</a></li>
-                        <li><a href="">Streams</a></li>
+                        <li className="stick-semibold"><a href="">Home</a></li>
+                        <li className="stick-semibold"><a href="">Join Us</a></li>
+                        <li className="stick-semibold"><a href="">Community</a></li>
+                        <li className="stick-semibold"><a href="">Streams</a></li>
                     </ul>
                 </div>
                 <div className="footerBottom">
