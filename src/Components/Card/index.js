@@ -12,6 +12,7 @@ class Card extends React.Component {
                         <div className="card-front-layer" />
                         <img className="card-logo" alt="card" src={this.props.logo} />
                     </div>
+                    <div className="gradient" />
                     <div className="back">
                         <div className="card-info">
                             <h1 className="stick-bold">{this.props.info.title + "(" + this.props.info.period + ")"}</h1>
@@ -26,5 +27,5 @@ class Card extends React.Component {
         )
     }
 }
-
+//<div className="gradient" />
 export default Card;

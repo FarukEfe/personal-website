@@ -17,26 +17,41 @@
   position: relative;
   transition: transform 1500ms;
   transform-style: preserve-3d;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card > ul, li {
   list-style-type: none;
 }
 
+.front, .back, .gradient {
+  position: absolute;
+  overflow: hidden;
+}
+
 .front, .back {
   height: 100%;
   width: 100%;
-
   border-radius: 2rem;
-  border-style: solid;
-  border-width: 5px;
-  border-color: linear-gradient(to right,#e66465, #9198e5);
+  backface-visibility: hidden;
+}
+
+.gradient {
+  width: 103%;
+  height: 102.1%;
+
+  border-radius: 2.1rem;
   box-shadow: 0 0 10px 5px rgba(245, 245, 245, 0.25);
 
-  position: absolute;
-  backface-visibility: hidden;
-  overflow: hidden;
+  color: linear-gradient(to right,#e66465, #9198e5);
+  background: linear-gradient(to right,#e66465, #9198e5);
+
+  z-index: 1;
 }
+
 
 .front {
   display: grid;
@@ -46,6 +61,8 @@
   justify-content: center;
   -ms-grid-row-align: center;
   -ms-grid-column-align: center;
+
+  z-index: 3;
 }
 
 .card-bg, .card-front-layer, .card-logo {
@@ -78,6 +95,8 @@
   justify-content: center;
   align-items: center;
   gap: 5rem;
+
+  z-index: 2;
 }
 
 .card-info {

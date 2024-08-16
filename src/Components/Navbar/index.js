@@ -7,18 +7,18 @@ class Navbar extends React.Component {
         return (
             <div id="navigation">
                 <nav className="rstack">
-                    <a href="/"><img alt="mainlogo" id="main" className="logo" style={{width: 42, height: 42}} src={process.env.PUBLIC_URL + "/images/logos/yuniks-logo.png"}/></a>
-                    <ul id="logos" className="nav_links">
-                        <li><a href="/"><img alt="insta" className="logo" style={{width: 21, height: 21}} src={process.env.PUBLIC_URL + "/images/socials/insta.png"}/></a></li>
-                        <li><a href="/"><img alt="twitch" className="logo" style={{width: 21, height: 21}} src={process.env.PUBLIC_URL + "/images/socials/twitch.png"}/></a></li>
-                        <li><a href="/"><img alt="youtube" className="logo" style={{width: 28, height: 21}} src={process.env.PUBLIC_URL + "/images/socials/youtube.png"}/></a></li>
-                    </ul>
-                </nav>
-                <nav>
+                    <a href="/"><img alt="mainlogo" id="main" className="logo" style={{width: 28, height: 28}} src={process.env.PUBLIC_URL + "/images/logos/home.svg"}/></a>
                     <ul className="nav_links">
                         <li className="stick-semibold"><a href="/aboutme">About Me</a></li>
                         <li className="stick-semibold"><a href="/education">Education</a></li>
                         <li className="stick-semibold"><a href="/interests"><button>Interests</button></a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul id="logos" className="nav_links">
+                        <li><a href="/"><img alt="insta" className="logo" style={{width: 22, height: 22}} src={process.env.PUBLIC_URL + "/images/socials/insta.svg"}/></a></li>
+                        <li><a href="/"><img alt="twitch" className="logo" style={{width: 22, height: 22}} src={process.env.PUBLIC_URL + "/images/socials/linkedin.svg"}/></a></li>
+                        <li><a href="/"><img alt="youtube" className="logo" style={{width: 22, height: 22}} src={process.env.PUBLIC_URL + "/images/socials/github.svg"}/></a></li>
                     </ul>
                 </nav>
             </div>
