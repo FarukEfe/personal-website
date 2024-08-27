@@ -6,6 +6,7 @@
 
 .App {
   text-align: center;
+  background-color: #222;
 }
 
 /* Fonts */
@@ -29,4 +30,25 @@
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 700;
+}
+
+.roboto-bold {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-semibold {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }

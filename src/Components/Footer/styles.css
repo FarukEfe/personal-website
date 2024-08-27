@@ -5,36 +5,13 @@
 .socialIcons {
     display: flex;
     justify-content: center;
+
+    padding-top: 15px;
 }
 
 .socialIcons a {
     text-decoration: none;
-    padding: 8px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 50%;
-
-    width: 52px;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    vertical-align: center;
-}
-
-.socialIcons a i {
-    font-size: 1.8em;
-    color: black;
-    opacity: 0.9;
-}
-
-.socialIcons a:hover {
-    background-color: #111;
-    transition: 0.5s;
-}
-
-.socialIcons a:hover i {
-    color: white;
-    transition: 0.5s;
+    padding: 0px 15px;
 }
 
 .footerNav {

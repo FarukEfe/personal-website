@@ -33,21 +33,21 @@ function App() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap" rel="stylesheet"  />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       </head>
       <div className="App">
+        <Navbar />
         <Router>
-          <Navbar />
           <Switch>
             <Route exact={true} path="/" component={MainPage} />
-            <Route exact={true} path="/aboutme" component={null /* About Me*/} />
-            <Route exact={true} path="/education" component={EducationPage} />
-            <Route exact={true} path="/interests" component={null /*Interests*/} />
+            <Route exact={true} path="/portfolio" component={null /* About Me*/} />
+            <Route exact={true} path="/emailme" component={EducationPage} />
             <Route exact={true} path="/404" component={null /*Error Page*/} />
             <Redirect to="/404" />
           </Switch>
-          <Footer />
         </Router>
+        <Footer />
       </div>
     </>
   );

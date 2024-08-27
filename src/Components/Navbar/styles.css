@@ -5,14 +5,16 @@
     vertical-align: center;
     padding: 10px 30px;
     
-    position: fixed;
-    width: 100%;
-    height: max-content;
+    position: absolute;
+    width: 100vw;
+    height: fit-content;
     left: 0px;
     top: 0px;
     z-index: 99;
-    background-color: #24252A;
+    background-color: transparent;
     vertical-align: center;
+
+    background: #222;
 }
 
 #navigation nav {
@@ -32,7 +34,7 @@
     vertical-align: center;
 }
 
-#main {
+.rstack .logo {
     margin-right: 20px;
 }
 
@@ -40,6 +42,14 @@
     cursor: pointer;
     border-style: 2px solid;
     color: whitesmoke;
+}
+
+#logos {
+    margin-right: 30px;
+}
+
+#logos, #logos ul {
+    height: 25px;
 }
 
 #logos li {
@@ -62,12 +72,12 @@
 }
 
 .nav_links li a:hover {
-    color: rgba(10, 165, 204,1);
+    color: #FDBF57;
 }
 
 #navigation button {
     padding: 6px 18px;
-    background-color: rgba(10, 165, 204,1);
+    background-color: #FDBF57;
     border: none;
     border-radius: 50px;
     cursor: pointer;

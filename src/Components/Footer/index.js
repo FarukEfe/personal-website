@@ -14,16 +14,16 @@ class Footer extends React.Component {
         return (
             <div id="footer">
                 <div className="socialIcons">
-                    <a href=""><i className="fa-brands fa-linkedin" /></a>
-                    <a href=""><i className="fa-brands fa-instagram" /></a>
-                    <a href=""><i className="fa-brands fa-twitter" /></a>
+                        <a href="/"><img alt="insta" className="logo" style={{width: 40, height: 40}} src={process.env.PUBLIC_URL + "/images/socials/insta.svg"}/></a>
+                        <a href="/"><img alt="twitch" className="logo" style={{width: 40, height: 40}} src={process.env.PUBLIC_URL + "/images/socials/linkedin.svg"}/></a>
+                        <a href="/"><img alt="youtube" className="logo" style={{width: 40, height: 40}} src={process.env.PUBLIC_URL + "/images/socials/github.svg"}/></a>
                 </div>
                 <div className="footerNav">
                     <ul>
-                        <li className="stick-semibold"><a href="">Home</a></li>
-                        <li className="stick-semibold"><a href="">Join Us</a></li>
-                        <li className="stick-semibold"><a href="">Community</a></li>
-                        <li className="stick-semibold"><a href="">Streams</a></li>
+                        <li className="stick-semibold"><a href="/">Portfolio</a></li>
+                        <li className="stick-semibold"><a href="/">Email Me</a></li>
+                        <li className="stick-semibold"><a href="/">Community</a></li>
+                        <li className="stick-semibold"><a href="/">Streams</a></li>
                     </ul>
                 </div>
                 <div className="footerBottom">
