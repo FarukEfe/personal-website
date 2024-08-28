@@ -25,4 +25,6 @@ class Navbar extends React.Component {
     }
 }
 
+// <img alt="gmail" style={{width: 25, height: 25}} src={process.env.PUBLIC_URL + "/images/socials/gmail.svg"} />
+
 export default Navbar;

@@ -1,10 +1,12 @@
 #main {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 40px;
+
+    margin-bottom: 50px;
 }
 
 .content {
@@ -19,29 +21,56 @@
     padding-right: 15%;
 }
 
-.reverse {
-    align-items: end !important;
-}
+/*
+    CSS for all content boxes
+*/
 
-.content h1 {
+.content .content-title {
     color: whitesmoke;
     font-size: 40px;
+    text-align: start;
+
+    background: transparent;
+    border-radius: 10px;
+    height: 5px;
+    width: 300px;
+    box-shadow: 0 55px 0 0 rgb(68, 209, 111);
+
+    padding-left: 15px;
+    margin-bottom: 50px;
 }
 
-.content .paragraphs p {
-    width: 50%;
-    color: whitesmoke;
-    font-size: 28px;
-    letter-spacing: 1.2;
-    line-height: 1.6;
+/*
+    Alignment for about-me
+*/
 
+.about-me .p-container {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
 }
 
-.paragraphs {
+/*Content of about-me*/
+
+.about-me .paragraphs {
+    grid-row: 1;
+    grid-column: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 100px;
+
+    position: relative;
+    z-index: 9;
+}
+
+.about-me .paragraphs p {
+    width: 80%;
+    color: whitesmoke;
+    font-size: 28px;
+    letter-spacing: 1.2;
+    line-height: 1.6;
+    text-align: start;
 }
 
 .push-left, .push-right {
@@ -53,12 +82,10 @@
 
 .push-left {
     justify-content: start;
-    text-align: start;
 }
 
 .push-right {
     justify-content: end;
-    text-align: end;
 }
 
 #mcmaster-link {
@@ -68,4 +95,28 @@
     font-size: 28px;
     letter-spacing: 1.2;
     line-height: 1.6;
+}
+
+/*Background of about-me*/
+
+.about-me .content-bg {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+
+    position: relative;
+    z-index: 8;
+}
+
+.about-me .content-bg img {
+    grid-row: 1;
+    grid-column: 1;
+    margin-right: 30px;
+    margin-top: 25px;
+    scale: 0.85;
+    filter: saturate(0.95) contrast(1.1) brightness(25%) blur(5px);
 }
