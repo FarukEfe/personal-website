@@ -1,5 +1,5 @@
 #navigation {
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
     align-items: center; /*Change this to flex-start flex-end etc to align differently in navbar*/
     vertical-align: center;

@@ -10,9 +10,23 @@ Its import html tag is on App.js
 */
 
 class Footer extends React.Component {
+
+    get_display() {
+        let url = window.location.href;
+        console.log(url)
+        let arr = url.split("/");
+        console.log(arr)
+        let ext = arr[arr.length - 1];
+        console.log(ext);
+        if (ext === "transcript" || ext === "portfolio") {
+            return false;
+        }
+        return true;
+    }
+
     render() { 
         return (
-            <div id="footer">
+            <div id="footer" style={{display: this.get_display() ? "block" : "none"}}>
                 <div className="socialIcons">
                         <a href="/"><img alt="insta" className="logo" style={{width: 40, height: 40}} src={process.env.PUBLIC_URL + "/images/socials/insta.svg"}/></a>
                         <a href="/"><img alt="twitch" className="logo" style={{width: 40, height: 40}} src={process.env.PUBLIC_URL + "/images/socials/linkedin.svg"}/></a>

@@ -16,6 +16,7 @@ export default function MainPage() {
                     <div className="paragraphs">
                         <div className="p-stretch push-left"><p className="roboto-light">I am a Computer Science (CO-OP) 🖥️ Bachelor's Student 👨‍🎓 at the <a href="/" id="mcmaster-link" className="roboto-light">McMaster University</a>. I have a strong interest in computers and new technologies. In particular, my deepest curiosities are Quantum Computers ⚛️, Artificial Intelligence 🤖, and Energies of the Future 🔋.</p></div>
                         <div className="p-stretch push-right"><p className="roboto-light">To pursue these curiosities, I am mainly looking forward to pursue Graduate Studies in Quantum Computing. I've also taken Machine Learning courses and I am currently active on Kaggle.</p></div>
+                        <div className="p-stretch push-left"><p className="roboto-light">Lol IDK WHAT ELSE TO PUT IN HERE SO TAKE THIS TEXT AS A PLACEHOLDER......</p></div>
                     </div>
                     <div className="content-bg">
                         <img alt="aboutme" src={process.env.PUBLIC_URL + "/images/bg/mcmaster.jpg"} />

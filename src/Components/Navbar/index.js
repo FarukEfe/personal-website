@@ -3,14 +3,28 @@ import React from "react";
 import "./styles.css";
 
 class Navbar extends React.Component {
+
+    get_display() {
+        let url = window.location.href;
+        console.log(url)
+        let arr = url.split("/");
+        console.log(arr)
+        let ext = arr[arr.length - 1];
+        console.log(ext);
+        if (ext === "transcript" || ext === "portfolio") {
+            return false;
+        }
+        return true;
+    }
+
     render() {
         return (
-            <div id="navigation">
+            <div id="navigation" style={{display: this.get_display() ? "flex" : "none"}}>
                 <nav className="rstack">
                     <a href="/"><img alt="mainlogo" className="logo" style={{width: 25, height: 25}} src={process.env.PUBLIC_URL + "/images/logos/home.svg"}/></a>
                     <ul className="nav_links">
-                        <li className="stick-semibold"><a href="/portfolio">Portfolio</a></li>
-                        <li className="stick-semibold"><a href="/transcript">Transcript</a></li>
+                        <li className="stick-semibold"><a href="/portfolio" target="_blank">Portfolio</a></li>
+                        <li className="stick-semibold"><a href="/transcript" target="_blank">Transcript</a></li>
                         <li className="stick-semibold"><a href="/emailme">Email Me</a></li>
                     </ul>
                 </nav>
