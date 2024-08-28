@@ -10,6 +10,7 @@ class Navbar extends React.Component {
                     <a href="/"><img alt="mainlogo" className="logo" style={{width: 25, height: 25}} src={process.env.PUBLIC_URL + "/images/logos/home.svg"}/></a>
                     <ul className="nav_links">
                         <li className="stick-semibold"><a href="/portfolio">Portfolio</a></li>
+                        <li className="stick-semibold"><a href="/transcript">Transcript</a></li>
                         <li className="stick-semibold"><a href="/emailme">Email Me</a></li>
                     </ul>
                 </nav>

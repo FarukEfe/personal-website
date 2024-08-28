@@ -8,7 +8,7 @@ import Navbar from "./Components/Navbar/index";
 import Footer from "./Components/Footer/index";
 
 import MainPage from './Pages/Main/index';
-import EducationPage from './Pages/Education/index';
+import Transcript from './Pages/Transcript';
 /* Template header
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -41,8 +41,9 @@ function App() {
         <Router>
           <Switch>
             <Route exact={true} path="/" component={MainPage} />
-            <Route exact={true} path="/portfolio" component={null /* About Me*/} />
-            <Route exact={true} path="/emailme" component={EducationPage} />
+            <Route exact={true} path="/transcript" component={Transcript} />
+            <Route exact={true} path="/portfolio" component={null /*Portfolio*/} />
+            <Route exact={true} path="/emailme" component={null /*Email Me*/} />
             <Route exact={true} path="/404" component={null /*Error Page*/} />
             <Redirect to="/404" />
           </Switch>
