@@ -1,26 +1,64 @@
 #education {
     width: 100%;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #222222;
-    padding-top: 120px;
-
-    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    -ms-grid-column-align: center;
+    -ms-grid-row-align: center;
+    padding-top: 80px;
 }
 
-#education > h1 {
+/* Navigation Items */
+#education h1 {
     height: fit-content;
     text-align: left;
     padding-left: 50px;
-    color: rgba(245,245,245,1);
+    color: whitesmoke;
 }
 
-#education > .h-flex {
+#education .card-navigator {
+    grid-row: 1;
+    grid-column: 1;
     width: 100%;
-    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(to right, #222, #222 5%, #22222200 40%, #22222200 60%, #222 95%, #222);
+
+    position: relative;
+    z-index: 9;
+}
+
+.card-navigator .card-nav-container {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.card-navigator .card-back, .card-navigator .card-forward {
+    opacity: 1;
+    transition: ease-out 500ms;
+    position: relative;
+    z-index: 11;
+}
+
+.card-navigator .card-back {
+    transform: rotate(180deg);
+}
+
+.card-nav-container:hover .card-back, .card-nav-container:hover .card-forward {
+    opacity: 0.4;
+}
+
+/* Card display */
+#education .h-flex {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
     padding-top: 40px 150px;
 
     display: flex;
@@ -28,6 +66,30 @@
     align-items: center;
     justify-content: center;
     gap: 5%;
+
+    position: relative;
+    z-index: 8;
+}
+
+/* Mover cards around depending on state */
+
+.c-first, .c-second, .c-third {
+    transform: ease-out 300ms;
+}
+
+.c-first {
+    order: 1;
+    scale: 0.9;
+}
+
+.c-second {
+    order : 2;
+    scale: 1;
+}
+
+.c-third {
+    order: 3;
+    scale: 0.9;
 }
 
 @media only screen and (max-width: 1000px) {
