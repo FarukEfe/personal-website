@@ -27,19 +27,23 @@ export default function MainPage() {
                 <h1 className="content-title stick-semibold">Education</h1>
                 <EducationPage />
             </div>
+            <div className="content experiences">
+                <h1 className="content-title stick-semibold">Experience</h1>
+                <div>
+                    <div className="kaggle">
+                    
+                    </div>
+                    <div className="coursera">
+    
+                    </div>
+                </div>
+                <div className="github">
+
+                </div>
+                <div className="igem">
+
+                </div>
+            </div>
         </div>
     )
 }
-
-/*
-            <div className="content reverse education">
-                <h1 className="stick-semibold">Education</h1>
-            </div>
-            <div className="content my-work">
-                <h1 className="stick-semibold">My Work</h1>
-                <div></div>
-            </div>
-            <div className="content reverse interests">
-                <h1 className="stick-semibold">Interests</h1>
-            </div>
-*/
