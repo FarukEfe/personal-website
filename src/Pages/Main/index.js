@@ -2,6 +2,7 @@ import React from "react";
 
 import Banner from "../../Components/Banner/index.js";
 import EducationPage from "../Education/index.js"
+import Experiences from "../Experiences/index.js";
 
 /* CSS */
 import "./styles.css";
@@ -29,6 +30,7 @@ export default function MainPage() {
             </div>
             <div className="content experiences">
                 <h1 className="content-title stick-semibold">Experience</h1>
+                <Experiences />
                 <div>
                     <div className="kaggle">
                     
