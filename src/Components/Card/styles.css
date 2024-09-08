@@ -109,7 +109,7 @@
   align-items: start;
   justify-content: start;
   text-align: left;
-  gap: 20px;
+  gap: 10px;
 }
 
 .card-info h1 {
@@ -125,6 +125,6 @@
   padding: 2px 5px;
   margin: 10px 5px;
   border-radius: 5px;
-  background: whitesmoke;
+  background: rgba(245, 245, 245, 0.75);
   color: black !important;
 }

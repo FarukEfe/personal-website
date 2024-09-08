@@ -29,9 +29,9 @@ class Card extends React.Component {
                             <h1 className="stick-bold">{this.props.info.title}</h1>
                             <p>{this.props.info.location}</p>
                             <ul className="roboto-light">
-                                <li>Degree 📜: {this.props.info.level}</li>
-                                <li>Period ⌛: {this.props.info.period}</li>
-                                <li>Average: 💯: {this.props.info.total_avg}</li>
+                                <li>Degree 📜: <b>{this.props.info.level}</b></li>
+                                <li>Period ⌛: <b>{this.props.info.period}</b></li>
+                                <li>Average: 💯: <b>{this.props.info.total_avg}</b></li>
                             </ul>
                             <div className="tags roboto-semibold">{this.get_tags()}</div>
                         </div>
