@@ -1,25 +1,22 @@
 import React from "react";
-
 import Entry from "../../Components/Entry";
 import "./styles.css";
 
-let sample_entry = {
-    background: "binary-bg.jpg",
-    title: "Hahaha",
-    logo: "github.svg",
-    tags: ["CNN","Tensorflow","Python"],
-    url: "/",
-    description: [
-        "Developed an Convolutional Neural Network Model that classifies the brain tumor into categories from the MRI image.",
-        "Developed an Convolutional Neural Network Model that classifies the brain tumor into categories from the MRI image."
-    ]
-}
+import { experience_list } from "../../Model/experience-model";
+
 
 export default function Experiences(props) {
+
+    let entries = [];
+    for (let i=0;i<experience_list.length;i++) {
+        let exp = experience_list[i];
+        let entry = <Entry entry={exp} />;
+        entries.push(entry);
+    }
     
     return (
-        <div id="experiences">
-            <Entry entry={sample_entry} />
+        <div id="experience">
+            {entries}
         </div>
     )
 }

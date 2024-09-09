@@ -41,7 +41,7 @@ class Entry extends React.Component {
                             <a className="entry-source" href={this.props.entry.url}><img alt="" src={process.env.PUBLIC_URL + "/images/socials/" + this.props.entry.logo} style={{width: 25, height: 25}} /></a>
                         </div>
                         <div className="push-right">
-                            <h2 className="entry-period stick-medium">{this.props.entry.title}</h2>
+                            <h2 className="entry-period stick-medium">{this.props.entry.period}</h2>
                         </div>
                     </div>
                     <div className="tags">
