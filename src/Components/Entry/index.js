@@ -27,6 +27,8 @@ class Entry extends React.Component {
             let html_item = <span className="entry-tags">{data}</span>;
             html_tags.push(html_item);
         }
+        // Add commas between tags
+        html_tags = html_tags.flatMap((val, idx, arr) => (arr.length - 1 !== idx) ? [val, <span>, </span>] : val)
 
         return html_tags;
     }
@@ -44,7 +46,7 @@ class Entry extends React.Component {
                             <h2 className="entry-period stick-medium">{this.props.entry.period}</h2>
                         </div>
                     </div>
-                    <div className="tags">
+                    <div className="tags-container">
                         {this.get_tags()}
                     </div>
                     <div className="entry-items">
