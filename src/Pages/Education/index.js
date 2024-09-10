@@ -6,7 +6,7 @@ import Card from "../../Components/Card";
 
 export default function EducationPage(props) {
 
-    let [item, setItem] = useState(1);
+    let [item, setItem] = useState(0);
     let [active, setActive] = useState(false);
 
     let infos = [
@@ -40,33 +40,60 @@ export default function EducationPage(props) {
     ];
 
     let cards = [
-                <Card onClick={() => {
+                <Card 
+                onClick={() => {
                     if (item === 2) {
                         setActive(!active);
                     }
-                }} school="sj" active={(item === 2 && active) ? "active" : "inactive"} order={(item === 2) ? 'c-second' : ((item === 1) ? 'c-third' : 'c-first')} info={infos[2]} bg={process.env.PUBLIC_URL + "images/bg/saintjoseph.jpg"} logo={process.env.PUBLIC_URL + "images/logos/saintjoseph.png"} />
+                }} 
+                school="sj" 
+                active={(item === 2 && active) ? "active" : "inactive"} order={(item === 2) ? 'c-second' : ((item === 1) ? 'c-third' : 'c-first')} 
+                info={infos[2]} 
+                bg={process.env.PUBLIC_URL + "images/bg/saintjoseph.jpg"} 
+                logo={process.env.PUBLIC_URL + "images/logos/saintjoseph.png"} />
                 ,
-                <Card onClick={() => {
+                <Card 
+                onClick={() => {
                     if (item === 1) {
                         setActive(!active);
                     }
-                }} school="lcs"  active={(item === 1 && active) ? "active" : "inactive"} order={(item === 1) ? 'c-second' : ((item === 0) ? 'c-third' : 'c-first')} info={infos[1]} bg={process.env.PUBLIC_URL + "images/bg/lcs.jpg"} logo={process.env.PUBLIC_URL + "images/logos/lcs.png"} />
+                }} 
+                school="lcs"  
+                active={(item === 1 && active) ? "active" : "inactive"} order={(item === 1) ? 'c-second' : ((item === 0) ? 'c-third' : 'c-first')} 
+                info={infos[1]} 
+                bg={process.env.PUBLIC_URL + "images/bg/lcs.jpg"} 
+                logo={process.env.PUBLIC_URL + "images/logos/lcs.png"} />
                 ,
-                <Card onClick={() => {
+                <Card 
+                onClick={() => {
                     if (item === 0) {
                         setActive(!active);
                     }
-                }} school="mcmaster" active={(item === 0 && active) ? "active" : "inactive"} order={(item === 0) ? 'c-second' : ((item === 2) ? 'c-third' : 'c-first')} info={infos[0]} bg={process.env.PUBLIC_URL + "images/bg/mcmaster.jpg"} logo={process.env.PUBLIC_URL + "images/logos/mcmaster.png"} />
+                }} 
+                school="mcmaster" 
+                active={(item === 0 && active) ? "active" : "inactive"} order={(item === 0) ? 'c-second' : ((item === 2) ? 'c-third' : 'c-first')} 
+                info={infos[0]} 
+                bg={process.env.PUBLIC_URL + "images/bg/mcmaster.jpg"} 
+                logo={process.env.PUBLIC_URL + "images/logos/mcmaster.png"} />
             ];
 
     let ordered_cards = cards.flatMap((val, idx, arr) => {
+        let new_val = val;
         if (idx === 0) {
-            
+            new_val = (item === 2) ? [null,null,val] : (item === 1) ? [val,null] : val;
         } else if (idx === cards.length - 1) {
-
+            new_val = (item === 0) ? [val,null,null] : (item === 1) ? [null,val] : val;
+        }
+        return new_val
+    })
+    /*
+    let translated_cards = ordered_cards.map((val, idx) => {
+        if (val !== null) {
+            let norm_idx = idx-2;
+            
         }
     })
-
+    */
     return (
             <div id="education">
                 <div className="card-nav-container" onClick={() => {
@@ -78,7 +105,7 @@ export default function EducationPage(props) {
                 </div>
                 <div className="h-flex-container">
                     <div className="h-flex-gradient" />
-                    <div className="h-flex">{this.cards_list()/**/}</div>
+                    <div className="h-flex">{cards /* Replace with ordered_cards when complete*/}</div>
                 </div>
                 <div className="card-nav-container" onClick={() => {
                     let newidx = (item === 2) ? 0 : item + 1;
