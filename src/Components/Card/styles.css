@@ -4,6 +4,9 @@
   height: 500px;
   perspective: 800px;
   color: whitesmoke;
+
+  transition: transform ease-out 1000ms;
+  position: absolute;
 }
 
 .card-container:hover > .card {

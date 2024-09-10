@@ -69,8 +69,8 @@
     font-size: 30px;
 }
 
-.entry-items, .entry-period {
-    font-size: 20px;
+.entry-period {
+    font-size: 25px;
 }
 
 .entry-items {
@@ -79,16 +79,21 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
+    font-size: 22px;
 }
 
 .entry-items ul {
-    list-style-type:  disc !important;
+    margin-left: 15px;
+    list-style-type: circle;
 }
 
+.entry-items ul li {
+    list-style-type: circle;
+}
 
 .entry-tags {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .entry-items ul li {
@@ -107,4 +112,7 @@
 .entry-background {
     height: auto;
     z-index: 7;
+
+    filter: blur(10px);
 }
+
