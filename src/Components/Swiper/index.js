@@ -6,11 +6,11 @@ import "./styles.css";
 class Slider extends React.Component {
 
     get_slides() {
-        let items = this.props.item_list;
+        let items = this.props.items;
         let slides = []
         for (let i=0;i<items.length;i++) {
-            item = items[i];
-            slide = <SwiperSlide>{item}</SwiperSlide>;
+            let item = items[i];
+            let slide = <SwiperSlide>{item}</SwiperSlide>;
             slides.push(slide);
         }
 
@@ -19,7 +19,12 @@ class Slider extends React.Component {
 
     render() {
         return (
-            <Swiper>
+            <Swiper
+            spaceBetween={50}
+            slidesPerView={3}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+            >
                 {this.get_slides()}
             </Swiper>
         )
