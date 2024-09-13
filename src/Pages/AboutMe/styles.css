@@ -1,0 +1,34 @@
+.aboutme {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+    color: whitesmoke;
+}
+
+.aboutme .title, .aboutme .middle, .aboutme .bottom {
+    text-align: center;
+    justify-content: center;
+}
+
+.aboutme .title {
+    font-size: 5rem;
+}
+
+.aboutme .paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aboutme .middle {
+    font-size: 2rem;
+}
+
+.aboutme .bottom {
+    font-size: 1.6rem;
+}

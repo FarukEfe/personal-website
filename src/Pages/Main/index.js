@@ -6,6 +6,8 @@ import Experiences from "../Experiences/index.js";
 
 /* CSS */
 import "./styles.css";
+import SliderTable from "../../Components/Swiper/index.js";
+import AboutMe from "../AboutMe/index.js";
 
 export default function MainPage() {
     return (
@@ -24,28 +26,22 @@ export default function MainPage() {
                     </div>
                 </div>
             </div>
+            <AboutMe />
             <div className="content education">
                 <h1 className="content-title stick-semibold">Education</h1>
                 <EducationPage />
             </div>
+            <div className="content eduction" >
+                <SliderTable items={[<span>slot 1</span>,<span>slot 2</span>,<span>slot 3</span>]} />
+            </div>
             <div className="content experiences">
                 <h1 className="content-title stick-semibold">Experience</h1>
                 <Experiences />
-                <div>
-                    <div className="kaggle">
-                    
-                    </div>
-                    <div className="coursera">
-    
-                    </div>
-                </div>
-                <div className="github">
-
-                </div>
-                <div className="igem">
-
-                </div>
             </div>
         </div>
     )
 }
+
+// Who Am I: https://webflow.com/blog/web-design-portfolios
+// Schools: Swiperjs
+// 
