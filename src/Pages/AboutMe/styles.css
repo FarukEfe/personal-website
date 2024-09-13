@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     padding: 50px;
-    background-color: #52007A; /* #4c005a, #6a1292 */
+    background-color: #390043; /* #4c005a, #6a1292 */
 }
 
 .aboutme .title, .aboutme .middle, .aboutme .bottom {
@@ -24,8 +24,8 @@
 
 .aboutme .title {
     font-size: 6rem;
-    color: #222;
-    text-shadow: #f5f5f5;
+    color: #f5f5f5;
+    text-shadow: 4px 4px #290030;
 }
 
 .aboutme .paragraphs {

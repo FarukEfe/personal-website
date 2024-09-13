@@ -11,7 +11,7 @@ class SliderCard extends React.Component {
             <div className="slider-card">
                 <div className="slcard-content">
                     <h1>{this.props.item.title}</h1>
-                    <p>{this.props.item.level}</p>
+                    <p>{this.props.item.degree}</p>
                     <p>{this.props.item.period}</p>
                     <p>{this.props.item.total_avg}</p>
                 </div>
