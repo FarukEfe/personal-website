@@ -11,6 +11,8 @@
 
 /* Fonts */
 
+/* FONT: Stick No Bills */
+
 .stick-medium {
   font-family: 'Stick No Bills', sans-serif;
   font-optical-sizing: auto;
@@ -32,6 +34,8 @@
   font-weight: 700;
 }
 
+/* FONT: Roboto */
+
 .roboto-bold {
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
@@ -46,12 +50,21 @@
   font-style: normal;
 }
 
+.roboto-medium {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .roboto-light {
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
+
+/* FONT: Underdog */
 
 .underdog-regular {
   font-family: "Underdog", system-ui;
@@ -63,4 +76,36 @@
   font-family: "Underdog", system-ui;
   font-weight: 600;
   font-style: normal;
+}
+
+/* FONT: Handjet */
+
+.handjet-regular {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+}
+
+.handjet-semibold {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+}
+
+.handjet-bold {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
 }

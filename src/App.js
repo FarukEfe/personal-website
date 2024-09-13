@@ -10,7 +10,7 @@ import Footer from "./Components/Footer/index";
 import MainPage from './Pages/Main/index';
 import Transcript from './Pages/Transcript';
 import EducationPage from './Pages/Education';
-import SliderTable from './Components/Swiper';
+import SliderTable from './Components/Slider';
 /* Template header
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -43,6 +43,7 @@ function App() {
         <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap" rel="stylesheet"  />
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet"></link>
       </head>
       <div className="App">
         <Navbar />

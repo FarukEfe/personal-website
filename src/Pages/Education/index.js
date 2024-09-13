@@ -3,7 +3,7 @@ import "./styles.css";
 
 import Card from "../../Components/Card";
 
-export default function EducationPage(props) {
+export default function Education(props) {
 
     let [item, setItem] = useState(0);
     let [active, setActive] = useState(false);

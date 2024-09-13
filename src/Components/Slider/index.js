@@ -29,7 +29,7 @@ class SliderTable extends React.Component {
             <Swiper
             className="swiper"
             // install Swiper modules
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, A11y]}
             spaceBetween={0}
             slidesPerView={1}
             navigation
