@@ -22,4 +22,11 @@ class SliderCard extends React.Component {
     }
 }
 
+export const slcard_example = <SliderCard item={{
+    title: "lol",
+    degree: "haha",
+    period: "period",
+    total_avg: "total average"
+}} background={"none"} />
+
 export default SliderCard;

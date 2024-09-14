@@ -8,6 +8,7 @@ import Experiences from "../Experiences/index.js";
 import "./styles.css";
 import SliderTable from "../../Components/Slider/index.js";
 import AboutMe from "../AboutMe/index.js";
+import { slcard_example } from "../../Components/SliderCard/index.js";
 
 export default function MainPage() {
     return (
@@ -17,7 +18,7 @@ export default function MainPage() {
         <AboutMe test={true} />
         <div className="content education" >
             <h1 className="content-title stick-semibold">Education</h1>
-            <SliderTable items={[<span>lol1</span>,<span>lol1</span>,<span>lol1</span>,<span>lol1</span>]} />
+            <SliderTable items={[slcard_example, slcard_example, slcard_example]} />
         </div>
         <div className="content experiences">
             <h1 className="content-title stick-semibold">Experience</h1>
