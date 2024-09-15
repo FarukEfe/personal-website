@@ -24,7 +24,6 @@ export default function MainPage() {
             <h1 className="content-title stick-semibold">Experience</h1>
             <Experiences />
         </div>
-        <SliderTable items={[<span>lol1</span>,<span>lol1</span>,<span>lol1</span>,<span>lol1</span>]} />
         </div>
         </>
     )

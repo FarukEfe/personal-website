@@ -24,12 +24,13 @@
 }
 
 .slcard-content {
+    color: whitesmoke;
     z-index: 9;
 }
 
 .slcard-filter {
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.8;
 
     z-index: 8;
 }
@@ -70,8 +71,16 @@
 
 .slcard-content .tag {
     display: inline-block;
-    padding: 3px 5px;
+    padding: 3px 8px;
     min-width: 75px;
     border-radius: 18px;
-    background: whitesmoke;
+    background: rgb(10, 103, 38);
+}
+
+.slcard-content h1 {
+    font-size: 36px;
+}
+
+.slcard-content .hdr {
+    font-size: 24px;
 }

@@ -20,8 +20,8 @@ class SliderCard extends React.Component {
             <div className="slider-card">
                 <div className="slcard-content">
                     <div className="indent">
-                        <div className="row-flex"><h1 className="roboto-semibold">{this.props.item.title}</h1><p className="roboto-light">{this.props.item.period}</p></div>
-                        <div className="row-flex"><p className="roboto-light">{this.props.item.degree}</p><p className="roboto-light">{this.props.item.location}</p></div>
+                        <div className="row-flex"><h1 className="roboto-medium">{this.props.item.title}</h1><p className="hdr roboto-light">{this.props.item.period}</p></div>
+                        <div className="row-flex"><p className="hdr roboto-light">{this.props.item.degree}</p><p className="hdr roboto-light">{this.props.item.location}</p></div>
                         <div className="row-start"><p className="roboto-light">{this.props.item.total_avg}</p></div>
                         <div className="tags">{this.tags_html()}</div>
                         <div></div>
@@ -35,14 +35,16 @@ class SliderCard extends React.Component {
 }
 
 export const slcard_example = <SliderCard item={{
-    title: "lol",
-    period: "period",
-    degree: "haha",
-    location: "ONTARIO",
+    title: "Lakefield College School",
+    period: "September 2021 - May 2023",
+    degree: "Ontario High School Diploma",
+    location: "Peterborough ON, Canada",
     tags:[
-        "lol1",
-        "lol1",
-        "lol1"
+        "Drone Club",
+        "SIC of Computing",
+        "SIC of Athletics",
+        "SIC of CB House",
+        "Varsity 1st Basketball Team"
     ],
     total_avg: "total average"
 }} background={"lcs.jpg"} />
