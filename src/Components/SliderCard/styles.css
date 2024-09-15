@@ -35,7 +35,43 @@
 }
 
 .slcard-background {
-    background-color: rgb(255, 0, 200);
-
     z-index: 7;
+}
+
+.slcard-content .indent {
+    margin: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.slcard-content .indent div {
+    width: 100%;
+    height: fit-content;
+}
+
+.slcard-content .indent .row-start {
+    text-align: start;
+}
+
+.slcard-content .indent .row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slcard-content .tags {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: start;
+}
+
+.slcard-content .tag {
+    display: inline-block;
+    padding: 3px 5px;
+    min-width: 75px;
+    border-radius: 18px;
+    background: whitesmoke;
 }

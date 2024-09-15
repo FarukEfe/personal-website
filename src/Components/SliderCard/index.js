@@ -4,19 +4,31 @@ import "./styles.css";
 
 class SliderCard extends React.Component {
 
-    // this.props.item.logo
-    // this.props.item.tags
+    tags_html() {
+        let tags = this.props.item.tags;
+        let html = [];
+        for (let i=0;i<tags.length;i++) {
+            let item = tags[i];
+            let span = <span className="tag">{item}</span>;
+            html.push(span)
+        }
+        return html;
+    }
+
     render() {
         return (
             <div className="slider-card">
                 <div className="slcard-content">
-                    <h1>{this.props.item.title}</h1>
-                    <p>{this.props.item.degree}</p>
-                    <p>{this.props.item.period}</p>
-                    <p>{this.props.item.total_avg}</p>
+                    <div className="indent">
+                        <div className="row-flex"><h1 className="roboto-semibold">{this.props.item.title}</h1><p className="roboto-light">{this.props.item.period}</p></div>
+                        <div className="row-flex"><p className="roboto-light">{this.props.item.degree}</p><p className="roboto-light">{this.props.item.location}</p></div>
+                        <div className="row-start"><p className="roboto-light">{this.props.item.total_avg}</p></div>
+                        <div className="tags">{this.tags_html()}</div>
+                        <div></div>
+                    </div>
                 </div>
                 <div className="slcard-filter" />
-                <img className="slcard-background" src={process.env.PUBLIC_URL + "/images/bg/" + this.props.background} />
+                <img className="slcard-background" src={process.env.PUBLIC_URL + "/images/bg/" + this.props.background} alt="item-bg" />
             </div>
         )
     }
@@ -24,9 +36,15 @@ class SliderCard extends React.Component {
 
 export const slcard_example = <SliderCard item={{
     title: "lol",
-    degree: "haha",
     period: "period",
+    degree: "haha",
+    location: "ONTARIO",
+    tags:[
+        "lol1",
+        "lol1",
+        "lol1"
+    ],
     total_avg: "total average"
-}} background={"none"} />
+}} background={"lcs.jpg"} />
 
 export default SliderCard;
