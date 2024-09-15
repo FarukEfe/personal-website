@@ -1,7 +1,6 @@
 import React from "react";
 
 import Banner from "../../Components/Banner/index.js";
-import Education from "../Education/index.js"
 import Experiences from "../Experiences/index.js";
 
 /* CSS */
@@ -17,7 +16,6 @@ export default function MainPage() {
         <Banner />
         <AboutMe test={true} />
         <div className="content education" >
-            <h1 className="content-title stick-semibold">Education</h1>
             <SliderTable items={[slcard_example, slcard_example, slcard_example]} />
         </div>
         <div className="content experiences">

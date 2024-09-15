@@ -25,8 +25,8 @@ class AboutMe extends React.Component {
             <div className="aboutme">
                 <h1 className="title handjet-bold">Welcome to my page. Let me introduce myself:</h1>
                 <div className="paragraphs">
-                    <p className="middle roboto-medium">I am a Computer Science (CO-OP) 🖥️ Bachelor's Student 👨‍🎓 at the <a href="/" className="aboutme-link roboto-semibold">McMaster University</a>. </p>
-                    <p className="bottom roboto-medium">I have a strong interest in computers and new technologies. In particular, my deepest curiosities are Quantum Computers ⚛️, Artificial Intelligence 🤖, and Energies of the Future 🔋.</p>
+                    <p className="middle handjet-medium">I am a Computer Science (CO-OP) 🖥️ Bachelor's Student 👨‍🎓 at the <a href="/" className="aboutme-link">McMaster University</a>. </p>
+                    <p className="bottom handjet-medium">I have a strong interest in computers and new technologies. In particular, my deepest curiosities are Quantum Computers ⚛️, Artificial Intelligence 🤖, and Energies of the Future 🔋.</p>
                 </div>
             </div>
         ) : this.old()

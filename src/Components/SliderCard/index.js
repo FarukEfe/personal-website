@@ -46,7 +46,7 @@ export const slcard_example = <SliderCard item={{
         "SIC of CB House",
         "Varsity 1st Basketball Team"
     ],
-    total_avg: "total average"
+    total_avg: "GPA: 4.0/4.0"
 }} background={"lcs.jpg"} />
 
 export default SliderCard;
