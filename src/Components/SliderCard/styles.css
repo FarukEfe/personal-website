@@ -71,16 +71,19 @@
 
 .slcard-content .tag {
     display: inline-block;
-    padding: 3px 8px;
+    padding: 4px 10px;
     min-width: 75px;
-    border-radius: 18px;
+    border-radius: 16px;
     background: rgb(10, 103, 38);
 }
 
 .slcard-content h1 {
-    font-size: 36px;
+    font-size: 28px;
 }
 
 .slcard-content .hdr {
-    font-size: 24px;
+    font-size: 18px;
+}
+.slcard-content .hdr2 {
+    font-size: 15px;
 }

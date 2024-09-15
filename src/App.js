@@ -44,6 +44,7 @@ function App() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet"></link>
       </head>
       <div className="App">
         <Navbar />

@@ -9,7 +9,7 @@ class SliderCard extends React.Component {
         let html = [];
         for (let i=0;i<tags.length;i++) {
             let item = tags[i];
-            let span = <span className="tag">{item}</span>;
+            let span = <span className="tag handjet-medium">{item}</span>;
             html.push(span)
         }
         return html;
@@ -20,9 +20,9 @@ class SliderCard extends React.Component {
             <div className="slider-card">
                 <div className="slcard-content">
                     <div className="indent">
-                        <div className="row-flex"><h1 className="roboto-medium">{this.props.item.title}</h1><p className="hdr roboto-light">{this.props.item.period}</p></div>
-                        <div className="row-flex"><p className="hdr roboto-light">{this.props.item.degree}</p><p className="hdr roboto-light">{this.props.item.location}</p></div>
-                        <div className="row-start"><p className="roboto-light">{this.props.item.total_avg}</p></div>
+                        <div className="row-flex"><h1 className="playwrite-semibold">{this.props.item.title}</h1><p className="hdr playwrite-italic">{this.props.item.period}</p></div>
+                        <div className="row-flex"><p className="hdr2 playwrite-italic">{this.props.item.degree}</p><p className="hdr2 playwrite-italic">{this.props.item.location}</p></div>
+                        <div className="row-start"><p className="playwrite-italic">{this.props.item.total_avg}</p></div>
                         <div className="tags">{this.tags_html()}</div>
                         <div></div>
                     </div>

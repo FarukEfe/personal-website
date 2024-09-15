@@ -17,7 +17,7 @@ class SliderTable extends React.Component {
         let slides = []
         for (let i=0;i<items.length;i++) {
             let item = items[i];
-            let slide = <SwiperSlide style={{backgroundColor: `rgb(${i * 50},100,100)`}} className="swiper-item">{item}</SwiperSlide>;
+            let slide = <SwiperSlide className="swiper-item">{item}</SwiperSlide>;
             slides.push(slide);
         }
 
