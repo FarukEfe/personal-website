@@ -9,8 +9,11 @@
     gap: 60px;
     align-items: center;
     justify-content: center;
-    padding: 50px;
-    background-color: #390043; /* #4c005a, #6a1292 */
+    padding: 150px;
+    /* background-color: #390043; */ /* #4c005a, #6a1292 */
+    /* background: radial-gradient(#340043,#1e0026 60%, #0a000d 95%); */
+    /* background: radial-gradient(#858159, #FFFDD0 90%); */
+    background: radial-gradient(#340043, transparent 80%); /* #1e0026 45%, */
 }
 
 .aboutme .title, .aboutme .middle, .aboutme .bottom {
@@ -23,9 +26,9 @@
 }
 
 .aboutme .title {
-    font-size: 6rem;
+    font-size: 6.2rem;
     color: #f5f5f5;
-    text-shadow: 4px 4px #290030;
+    text-shadow: 4px 4px #7c0808, 3px -1px #107a30; /* #290030 */
 }
 
 .aboutme .paragraphs {
@@ -36,18 +39,19 @@
 }
 
 .aboutme .middle {
-    font-size: 2rem;
+    font-size: 2.8rem;
 }
 
 .aboutme .bottom {
-    font-size: 1.6rem;
+    font-size: 2.1rem;
 }
 
 .aboutme-link {
     cursor: pointer;
-    text-decoration-color: #ca9945;
+    /*text-decoration-color: #ca9945;*/
+    text-decoration: none;
     color: #ca9945;
-    font-size: 28px;
+    font-size: 2.8rem;
     letter-spacing: 1.2;
     line-height: 1.6;
 }

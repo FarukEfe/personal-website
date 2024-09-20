@@ -11,21 +11,6 @@
     margin-bottom: 50px;
     overflow: hidden;
 }
-/*
-.content {
-    /*
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 50px;
-    
-    padding-left: 15%;
-    padding-right: 15%;
-
-}
-*/
 
 /*
     CSS for all content boxes
@@ -44,85 +29,4 @@
 
     padding-left: 15px;
     margin-bottom: 50px;
-}
-
-/*
-    Alignment for about-me
-*/
-
-.about-me .p-container {
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 1;
-}
-
-/*Content of about-me*/
-
-.about-me .paragraphs {
-    grid-row: 1;
-    grid-column: 1;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-
-    position: relative;
-    z-index: 9;
-}
-
-.about-me .paragraphs p {
-    width: 80%;
-    color: whitesmoke;
-    font-size: 28px;
-    letter-spacing: 1.2;
-    line-height: 1.6;
-    text-align: start;
-}
-
-.push-left, .push-right {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.push-left {
-    justify-content: start;
-}
-
-.push-right {
-    justify-content: end;
-}
-
-#mcmaster-link {
-    cursor: pointer;
-    text-decoration-color: #FDBF57;
-    color: #FDBF57;
-    font-size: 28px;
-    letter-spacing: 1.2;
-    line-height: 1.6;
-}
-
-/*Background of about-me*/
-
-.about-me .content-bg {
-    grid-row: 1;
-    grid-column: 1;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 1;
-
-    position: relative;
-    z-index: 8;
-}
-
-.about-me .content-bg img {
-    grid-row: 1;
-    grid-column: 1;
-    margin-right: 30px;
-    margin-top: 25px;
-    scale: 0.85;
-    filter: saturate(0.95) contrast(1.1) brightness(25%) blur(5px);
 }

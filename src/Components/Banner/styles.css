@@ -1,13 +1,14 @@
 .banner-header {
     width: 100%;
     height: 100vh;
-    min-height: 750px;
+    min-height: 850px;
     max-height: 1050px;
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 1;
     -ms-grid-row-align: start;
     -ms-grid-column-align: start;
+
 }
 
 .banner-header .lowest,.banner-header .middle,.banner-header .filter,.banner-header .highest {

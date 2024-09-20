@@ -8,22 +8,22 @@ import "./styles.css";
 import SliderTable from "../../Components/Slider/index.js";
 import AboutMe from "../AboutMe/index.js";
 import { slcard_example } from "../../Components/SliderCard/index.js";
+import SliderBanner from "../../Components/SliderBanner/index.js";
 
 export default function MainPage() {
+
+    const edu_banner = <SliderBanner title={"Education"} emoji={"📖"} />
+
     return (
-        <>
         <div className="main">
-        <Banner />
-        <AboutMe test={true} />
-        <div className="content education" >
-            <SliderTable items={[slcard_example, slcard_example, slcard_example]} />
+            <Banner />
+            <AboutMe test={true} />
+            <SliderTable items={[edu_banner, slcard_example, slcard_example, slcard_example]} />
+            <div className="content experiences">
+                <h1 className="content-title stick-semibold">Experience</h1>
+                <Experiences />
+            </div>
         </div>
-        <div className="content experiences">
-            <h1 className="content-title stick-semibold">Experience</h1>
-            <Experiences />
-        </div>
-        </div>
-        </>
     )
 }
 

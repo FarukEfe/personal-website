@@ -14,7 +14,7 @@ class SliderTable extends React.Component {
 
     get_slides() {
         let items = this.props.items;
-        let slides = []
+        let slides = [];
         for (let i=0;i<items.length;i++) {
             let item = items[i];
             let slide = <SwiperSlide className="swiper-item">{item}</SwiperSlide>;
