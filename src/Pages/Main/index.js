@@ -12,17 +12,13 @@ import SliderBanner from "../../Components/SliderBanner/index.js";
 
 export default function MainPage() {
 
-    const edu_banner = <SliderBanner title={"Education"} emoji={"📖"} />
+    const edu_banner = <SliderBanner title={"Education"} emoji={"📖"} background={"education.jpg"} />
 
     return (
         <div className="main">
             <Banner />
             <AboutMe test={true} />
             <SliderTable items={[edu_banner, slcard_example, slcard_example, slcard_example]} />
-            <div className="content experiences">
-                <h1 className="content-title stick-semibold">Experience</h1>
-                <Experiences />
-            </div>
         </div>
     )
 }
@@ -33,7 +29,12 @@ export default function MainPage() {
                 <EducationPage />
             </div>
 */
-
+/*
+            <div className="content experiences">
+                <h1 className="content-title stick-semibold">Experience</h1>
+                <Experiences />
+            </div>
+*/
 // Who Am I: https://webflow.com/blog/web-design-portfolios
 // Schools: Swiperjs
 // 

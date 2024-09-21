@@ -1,8 +1,6 @@
 .aboutme {
     width: 100%;
-    height: 100vh !important;
-    min-height: 800px;
-    max-height: 1050px;
+    height: 1100px;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -13,7 +11,7 @@
     /* background-color: #390043; */ /* #4c005a, #6a1292 */
     /* background: radial-gradient(#340043,#1e0026 60%, #0a000d 95%); */
     /* background: radial-gradient(#858159, #FFFDD0 90%); */
-    background: radial-gradient(#340043, transparent 80%); /* #1e0026 45%, */
+    background: radial-gradient(#340043, transparent 70%); /* #1e0026 45%, */
 }
 
 .aboutme .title, .aboutme .middle, .aboutme .bottom {

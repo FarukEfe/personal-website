@@ -67,6 +67,7 @@
     flex-direction: row;
     gap: 6px;
     align-items: start;
+    margin-top: 10px;
 }
 
 .slcard-content .tag {
@@ -74,7 +75,7 @@
     padding: 4px 10px;
     min-width: 75px;
     border-radius: 16px;
-    background: rgb(10, 103, 38);
+    /* background: #0a6726; */
 }
 
 .slcard-content h1 {
@@ -84,6 +85,13 @@
 .slcard-content .hdr {
     font-size: 18px;
 }
+
 .slcard-content .hdr2 {
     font-size: 15px;
+}
+
+.slcard-content .text {
+    margin-top: 20px;
+    text-align: start;
+    font-size: 15px
 }

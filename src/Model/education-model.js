@@ -1,29 +1,68 @@
 let education = [
     {
-        title: "McMaster University",
-        period: "September 2023 - Now",
-        degree: "Bachelor's in Computer Science (CO-OP)",
-        total_avg: "A",
-        tags: [],
-        gradFrom: "#7A003C",
-        gradTo: "#FDBF57"
+        title: "Lakefield College School",
+        period: "September 2021 - May 2023",
+        degree: "Ontario High School Diploma",
+        location: "Peterborough ON, Canada",
+        tags:[
+            "Drone Club 🛩️",
+            "SIC of Computing 💻",
+            "SIC of Athletics",
+            "SIC of Residence",
+            "Varsity 1st Basketball Team 🏀"
+        ],
+        tag_types:[
+            "activity",
+            "role",
+            "role",
+            "role",
+            "athletics"
+        ],
+        total_avg: "GPA: 4.0 / 4.0",
+        text: "I first came to LCS in 2021 halfway through high-school. It was by far one of the best decisions I've made in my life. Aside from the given above, I've done many activities such as learning how to sail, camping & canoeing, etc. Most of all, I've built strong friendships in this tight-knit community."
     },
     {
         title: "Lakefield College School",
-        period: "September 2021 - June 2023",
+        period: "September 2021 - May 2023",
         degree: "Ontario High School Diploma",
-        total_avg: "A+",
-        tags: ["Basketball Varsity 1st Team 🏀","Volleyball Varsity 1st Team 🏐","Coding Club 💻" ,"Drone Club 🛩️"],
-        gradFrom: "#006251",
-        gradTo: "#01466D"
+        location: "Peterborough ON, Canada",
+        tags:[
+            "Drone Club",
+            "SIC of Computing",
+            "SIC of Athletics",
+            "SIC of CB House",
+            "Varsity 1st Basketball Team"
+        ],
+        tag_types:[
+            "activity",
+            "role",
+            "role",
+            "role",
+            "athletics"
+        ],
+        total_avg: "GPA: 4.0 / 4.0",
+        text: "I first came to LCS in 2021 halfway through high-school. It was by far one of the best decisions I've made in my life. Aside from the given above, I've done many activities such as learning how to sail, camping & canoeing, etc. Most of all, I've built strong friendships in this tight-knit community."
     },
     {
-        title: "Istanbul Saint Joseph French High School",
-        period: "September 2018 - June 2021",
-        degree: "High School (9th and 10th Grades)",
-        total_avg: "A",
-        tags: ["Basketball Junior Team 🏀", "iGEM"],
-        gradFrom: "#FCDE05",
-        gradTo: "#1E4398"
+        title: "Lakefield College School",
+        period: "September 2021 - May 2023",
+        degree: "Ontario High School Diploma",
+        location: "Peterborough ON, Canada",
+        tags:[
+            "Drone Club",
+            "SIC of Computing",
+            "SIC of Athletics",
+            "SIC of CB House",
+            "Varsity 1st Basketball Team"
+        ],
+        tag_types:[
+            "activity",
+            "role",
+            "role",
+            "role",
+            "athletics"
+        ],
+        total_avg: "GPA: 4.0 / 4.0",
+        text: "I first came to LCS in 2021 halfway through high-school. It was by far one of the best decisions I've made in my life. Aside from the given above, I've done many activities such as learning how to sail, camping & canoeing, etc. Most of all, I've built strong friendships in this tight-knit community."
     }
-];
+]
