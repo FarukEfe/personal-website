@@ -13,10 +13,15 @@ export default function Experiences(props) {
         let entry = <Entry entry={exp} />;
         entries.push(entry);
     }
+
+    let classes = ["item-1","item-2","item-3"];
+    let cells = classes.map((val, idx, arr) => <div className={val}></div>)
     
     return (
         <div id="experience">
-            {entries}
+            <div className="item-1"></div>
+            <div className="item-2"></div>
+            <div className="item-3"></div>
         </div>
     )
 }

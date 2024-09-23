@@ -19,6 +19,7 @@ export default function MainPage() {
             <Banner />
             <AboutMe test={true} />
             <SliderTable items={[edu_banner, slcard_example, slcard_example, slcard_example]} />
+            <Experiences />
         </div>
     )
 }
